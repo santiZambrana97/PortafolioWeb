@@ -321,9 +321,9 @@ p{
     color:black;
     background-color: darksalmon;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 2rem;
     font-weight: bold;
-    font-family: 'Gugi', cursive;
+    font-family: var(--fuenteTexto);
     margin-bottom: 20px;
     padding: 15px 40px;
     border-radius: 10px;
