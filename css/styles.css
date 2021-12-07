@@ -215,7 +215,8 @@ p{
 }
 
 /*Contacto y Redes*/
-.ajustes a{
+.ajustes a,
+.ajustes div{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -278,14 +279,20 @@ p{
 .miform{
     width: min( 60rem, 100%);
     margin: 0 auto;
-    background: rgba(0,0,0,0.2);
+    background-color: grey;
     padding: 2rem;
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 1rem;
+}
 
-    
-
+.miform legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: yellow;
 
 }
 
@@ -296,6 +303,8 @@ p{
     box-sizing: border-box;
     font-size: 14px;
     background-color:aliceblue;
+    border: none;
+    border-radius: 1rem;
 }
 
 .tex{
@@ -308,6 +317,7 @@ p{
     max-height: 200px;
     max-width: 100%;
     background-color:aliceblue;
+    border-radius: 1rem;
 }
 .botonubi{
     display: flex;
