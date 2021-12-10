@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -23,8 +24,8 @@
             </nav>
         </div>
 
-        <h1 class="titulo">SZ.</h1>
-       
+        <h1 class="titulo animacion">SZ.</h1>
+    
     </header>
      
     
@@ -47,7 +48,7 @@
         <section >
             <h2 class="centrar-titulo">Sobre Mi</h2>
             <div class="perfil">
-                <img src="img/foto perfil (2).jpeg" alt="">
+                <img class="foto-perfil" src="img/foto perfil (2).jpeg" alt="foto">
                 <p>
                     Me llamo Santiago Zambrana, soy estudiante avanzado en la carrera de Ingeniería en Sistemas de Información, en la facultad Universidad Tecnológica Nacional (UTN-FRM). 
                     Tengo Predisposición para aprender, responsabilidad y capacidad para trabajar en equipo. En búsqueda de desafíos y oportunidades que me permitan crecer tanto personal, 
@@ -88,7 +89,7 @@
                             <img src="img/guitarra-electrica.png" alt="">
                         </div>
                         <p>Página Web que contiene información sobre Festival de Música de Rock y EDM(electronic dance music).</p>
-                    <a class="boton" href="https://festival-rock-edm-music.netlify.app" target="_BLANCK">Conocer Más</a>   
+                    <a class="boton alinear-boton" href="https://festival-rock-edm-music.netlify.app" target="_BLANCK">Conocer Más</a>   
                 </section>
                 
                 <section class="proyecto">
@@ -97,7 +98,7 @@
                             <img src="img/magdalena.png" alt="">
                         </div>
                         <p>Página Web desarrollada para Microemprendimiento de Pastelería.Encontrá Postres, Tortas y Más.</p>
-                    <a class="boton" href="https://zambranapatisserie.netlify.app" target="_BLANCK">Conocer Más</a> 
+                    <a class="boton alinear-boton" href="https://zambranapatisserie.netlify.app" target="_BLANCK">Conocer Más</a> 
                 </section>
                
                 <section class="proyecto">
@@ -106,7 +107,7 @@
                             <img src="img/taza-de-cafe (1).png" alt="">
                         </div>
                         <p>Página Web para los amantes del Café.Encontá información del café, los beneficios de este  , cursos , recetas y más.</p> 
-                    <a class="boton"  href="https://blog-de-cafe-santizambrana.netlify.app" target="_BLANCK">Conocer Más</a>
+                    <a class="boton alinear-boton"  href="https://blog-de-cafe-santizambrana.netlify.app" target="_BLANCK">Conocer Más</a>
                 </section>
 
                 <section class="proyecto">
@@ -117,32 +118,41 @@
                         <p>Sitio Web enfocado en brindar y subir contenido de noticias informativas.</p> 
                     <a class="boton" href="https://teck-news.netlify.app" target="_BLANCK">Conocer Más</a>
                 </section>
+
+                <section class="proyecto">
+                    <h3>Sitio Web FrontEndStore</h3>
+                        <div class="iconos">
+                            <img src="img/camiseta-de-futbol.png" alt="">
+                        </div>
+                        <p>Sitio Web enfocado en brindar y mostrar playeras con la temática de Tecnologías de FrontEnd.</p> 
+                    <a class="boton " href="https://primertiendaweb.netlify.app" target="_BLANCK">Conocer Más</a>
+                </section>
             </div>
         </section>
 
         <!-- Redes Sociales -->
         <section>
             <h2 class="centrar-titulo">Mis Redes</h2>
-            <div class="alinear">
+            <div class="alinear-iconos">
                 <div class="espacio">
                     <a href="https://t.me/santizambrana" target="_BLANCK" >
-                        <img src="img/telegrama.png"  alt="">
+                        <img class="icono" src="img/telegrama.png"  alt="">
                     </a>
                 </div>
 
                 <div class="espacio">
                     <a href="https://github.com/santiZambrana97" target="_BLANCK" >
-                        <img src="img/github.png"  alt="">
+                        <img class="icono" src="img/github.png"  alt="">
                     </a>
                 </div>
                 <div class="espacio">
                     <a href="https://www.linkedin.com/in/santiago-zambrana-a79176227/" target="_BLANCK" >
-                        <img src="img/linkedin.png"  alt="">
+                        <img class="icono" src="img/linkedin.png"  alt="">
                     </a>
                 </div>
                 <div class="espacio">
                     <a href="https://www.instagram.com/santi.97.zambrana/" target="_BLANCK" >
-                        <img src="img/instagram (1).png"  alt="">
+                        <img class="icono" src="img/instagram (1).png"  alt="">
                     </a>
                 </div>
             </div>
@@ -151,10 +161,10 @@
         <!-- Contacto -->
         <section id="contacto">
             <h2 class="centrar-titulo">Contacto</h2>
-            <div class="alinear">
+            <div class="alinear-iconos">
                 <div class="ajustes">
                     <a href = "https://wa.me/542634512398" target="_BLANCK">
-                        <img src="img/whatsapp.png"  alt="">
+                        <img  src="img/whatsapp.png"  alt="">
                         <p class="centrar">+54 2634512398</p>
                     </a>
                 </div>
@@ -171,17 +181,18 @@
         <!-- Formulario -->
         <h2 class="centrar-titulo">Formulario de Contacto</h2>
         <form class = "miform" method="post" data-netlify="true">
-            <legend>Contactame llenando todos los campos</legend>
-            <div class="contenedor-campos">
-                <input class = "inp" name="nombre" type="text" id="nombre" placeholder = "Nombre" required>
-                <input class = "inp" name= "correo" type="text" id="correo" placeholder = "Correo Electrónico" required>
-                <input class = "inp" name="telefono" type="text" id="telefono" placeholder = "Teléfono" required>
-                <textarea class = "tex" name="mensaje" id="mensaje" placeholder = "Escriba aquí su mensaje" required></textarea>
-                <div class="botonubi">
-                    <input type="submit" value="ENVIAR" class = "botomform" id="boton">
+            <fieldset>
+                <legend>Contactame llenando todos los campos</legend>
+                <div class="contenedor-campos">
+                    <input class = "inp" name="nombre" type="text" id="nombre" placeholder = "Nombre" required>
+                    <input class = "inp" name= "correo" type="text" id="correo" placeholder = "Correo Electrónico" required>
+                    <input class = "inp" name="telefono" type="text" id="telefono" placeholder = "Teléfono" required>
+                    <textarea class = "tex" name="mensaje" id="mensaje" placeholder = "Escriba aquí su mensaje" required></textarea>
+                    <div class="botonubi">
+                        <input type="submit" value="ENVIAR" class = "botomform" id="boton">
+                    </div>
                 </div>
-            </div>
-        
+            </fieldset>
         </form> 
 
         <a class="volver-atras" href="index.html">
@@ -196,7 +207,9 @@
         <p>Todos los derechos reservados ©.Santiago Zambrana-2021</p>
     </footer>     
     
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animacion.js"></script>
+    
 
 </body>
 </html>
