@@ -60,6 +60,10 @@ ul{
     text-align: center;
     border: none;
 }
+.boton:hover{
+    color: #FFE98A ;
+}
+
 /*Tipografías*/
 .titulo{
     font-family: var(--fuenteTitulo);
@@ -145,7 +149,6 @@ p{
 }
 
 /*Acerca de Mi*/
-
 .perfil{
     display: block;
     flex-direction: column;
@@ -154,9 +157,10 @@ p{
     
 }
 
-.perfil img{
+.foto-perfil{
    max-width: 100%;
-   margin-bottom: 2rem;
+   border-radius: 2rem;
+   box-shadow: 0px 5px 15px 0px rgba(112,112,112,1);
 }
 @media (min-width: 768px) {
     .perfil{
@@ -164,12 +168,13 @@ p{
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
     }
-    .perfil img{
+    .foto-perfil{
         max-width: 90%;
     }
     
 }
 
+/*Box Shadow*/
 .sombra{
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,1);
     background-color: var(--blanco);
@@ -181,7 +186,7 @@ p{
 @media (min-width: 768px) {
     .proyectos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
         column-gap: 1rem;
     }
 }
@@ -192,6 +197,7 @@ p{
   flex-direction: column;
   align-items: center;
   margin-bottom: 2.5rem;
+  flex: 1;
 }
 .proyecto h3{
   color:#542E71;
@@ -227,7 +233,7 @@ p{
     margin-top: 2rem;
     margin-left: 2rem;
 }
-.alinear{
+.alinear-iconos{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -236,7 +242,7 @@ p{
 }
 
 @media (min-width: 768px) {
-    .alinear{
+    .alinear-iconos{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -244,16 +250,12 @@ p{
     }
 }
 
-.espacio img{
+.icono{
     margin-top: 2rem;
+
 }
-
-
-/*Footer*/
-.footer{
-    font-weight: bold;
-    margin-top: 2rem;
-    text-align: center;
+.icono:hover{
+   transform: scale(1.2,1.2);
 }
 
 /*Barra Navegacion fiha*/
@@ -286,14 +288,17 @@ p{
     border-radius: 1rem;
 }
 
-.miform legend{
+.miform fieldset {
+    border: none;
+}
+
+legend{
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
     color: yellow;
-
 }
 
 .inp{
@@ -341,6 +346,7 @@ p{
 
 #boton:hover{
     cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .volver-atras{
@@ -353,4 +359,15 @@ p{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.volver-atras:hover{
+    color: #0F2C67;
+    transform: translateY(-5px);
+}
+/*Footer*/
+.footer{
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
 }
