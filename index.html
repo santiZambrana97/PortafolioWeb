@@ -134,47 +134,29 @@
         <section>
             <h2 class="centrar-titulo">Mis Redes</h2>
             <div class="alinear-iconos">
-                <div class="espacio">
-                    <a href="https://t.me/santizambrana" target="_BLANCK" >
-                        <img class="icono" src="img/telegrama.png"  alt="">
-                    </a>
-                </div>
+                <a href="https://t.me/santizambrana" target="_BLANCK" >
+                    <img class="icono" src="img/telegrama.png"  alt="">
+                </a>
+               
 
-                <div class="espacio">
-                    <a href="https://github.com/santiZambrana97" target="_BLANCK" >
-                        <img class="icono" src="img/github.png"  alt="">
-                    </a>
-                </div>
-                <div class="espacio">
-                    <a href="https://www.linkedin.com/in/santiago-zambrana-a79176227/" target="_BLANCK" >
-                        <img class="icono" src="img/linkedin.png"  alt="">
-                    </a>
-                </div>
-                <div class="espacio">
-                    <a href="https://www.instagram.com/santi.97.zambrana/" target="_BLANCK" >
-                        <img class="icono" src="img/instagram (1).png"  alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
+                <a href = "https://wa.me/542634512398" target="_BLANCK">
+                    <img class="icono" src="img/whatsapp.png"  alt="">
+                </a>
 
-        <!-- Contacto -->
-        <section id="contacto">
-            <h2 class="centrar-titulo">Contacto</h2>
-            <div class="alinear-iconos">
-                <div class="ajustes">
-                    <a href = "https://wa.me/542634512398" target="_BLANCK">
-                        <img  src="img/whatsapp.png"  alt="">
-                        <p class="centrar">+54 2634512398</p>
-                    </a>
-                </div>
-
-                <div class="ajustes">
-                    <div>
-                        <img src="img/gmail.png"  alt="">
-                        <p class="centrar"> santi.97.zambrana@gmail.com</p>
-                    </div>
-                </div>
+                
+                <a href="https://github.com/santiZambrana97" target="_BLANCK" >
+                    <img class="icono" src="img/github.png"  alt="">
+                </a>
+                
+           
+                <a href="https://www.linkedin.com/in/santiago-zambrana-a79176227/" target="_BLANCK" >
+                    <img class="icono" src="img/linkedin.png"  alt="">
+                 </a>
+              
+             
+                <a href="https://www.instagram.com/santi.97.zambrana/" target="_BLANCK" >
+                    <img class="icono" src="img/instagram (1).png"  alt="">
+                </a> 
             </div>
         </section>
 
@@ -184,10 +166,18 @@
             <fieldset>
                 <legend>Contactame llenando todos los campos</legend>
                 <div class="contenedor-campos">
+                    <label >Nombre</label>
                     <input class = "inp" name="nombre" type="text" id="nombre" placeholder = "Nombre" required>
+
+                    <label>Correo</label>
                     <input class = "inp" name= "correo" type="text" id="correo" placeholder = "Correo Electrónico" required>
+
+                    <label >Teléfono</label>
                     <input class = "inp" name="telefono" type="text" id="telefono" placeholder = "Teléfono" required>
+
+                    <label>Mensaje</label>
                     <textarea class = "tex" name="mensaje" id="mensaje" placeholder = "Escriba aquí su mensaje" required></textarea>
+
                     <div class="botonubi">
                         <input type="submit" value="ENVIAR" class = "botomform" id="boton">
                     </div>
@@ -204,7 +194,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Todos los derechos reservados ©.Santiago Zambrana-2021</p>
+        <div class="centrar-footer">
+            <p>Todos los derechos reservados ©.Santiago Zambrana-2021</p>
+            <div class="ubicacion-correo">
+                <img src="img/sobre-de-correo-electronico.png" alt="">
+                <p class="margin">santi.97.zambrana@gmail.com</p>
+            </div>
+        </div>
+        
     </footer>     
     
     <script src="js/app.js"></script>
