@@ -358,6 +358,9 @@ label{
     align-items: center;
     justify-content: center;
 }
+.centrar-footer p{
+    text-align: center;
+}
 @media (min-width: 768px) {
     .centrar-footer{
         display: flex;
@@ -369,6 +372,7 @@ label{
 
 .footer p{
     margin-bottom: .5rem;
+    
 }
 .ubicacion-correo{
     display: flex;
