@@ -12,6 +12,6 @@ window.sr = ScrollReveal();
     scale: 4
   });
 
-sr.reveal('.sombra' , { delay:1000});
-sr.reveal('.proyectos' , { delay:750});
+sr.reveal('.sombra' , { delay:500});
+sr.reveal('.proyectos' , { delay:600});
 sr.reveal('.alinear-iconos' , { delay:600});
