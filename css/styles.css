@@ -10,7 +10,7 @@
     
 }
 
-/*Globales*/
+/***Globales***/
 html{
     font-size: 62.5%;
     box-sizing: border-box;/*Hack border box, lo que hace es que si yo le defino x cantidad de pixeles a un elemneto y despues le 
@@ -65,7 +65,7 @@ ul{
     color: #FFE98A ;
 }
 
-/*Tipografías*/
+/***Tipografías***/
 .titulo{
     font-family: var(--fuenteTitulo);
     font-size: 7.8rem;
@@ -92,7 +92,7 @@ p{
 .resaltar{
     font-weight: bold;
 }
-/*Navegacion Principal*/
+/***Navegacion Principal***/
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -121,7 +121,7 @@ p{
     color: var(--oscuro);
 }
 
-/*Fondo*/
+/***Fondo***/
 .fondo{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ p{
     color: var(--blanco);
 }
 
-/*Acerca de Mi*/
+/***Acerca de Mi***/
 .perfil{
     display: block;
     flex-direction: column;
@@ -183,7 +183,7 @@ p{
     border-radius: 1rem;
 }
 
-/*Portafolio*/
+/***Portafolio***/
 @media (min-width: 768px) {
     .proyectos{
         display: grid;
@@ -219,7 +219,7 @@ p{
     
 }
 
-/*Redes*/
+/***Redes***/
 .alinear-iconos{
     display: flex;
     align-items: center;
@@ -346,7 +346,8 @@ label{
     color: #0F2C67;
     transform: translateY(-5px);
 }
-/*Footer*/
+
+/***Footer***/
 .footer{
     font-weight: bold;
     margin-top: 1rem;
