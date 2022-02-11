@@ -9,28 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
     <!-- Navegación -->
     <header id= "inicio">
-        <div  class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobreMi">Sobre Mi</a>
-            <a href="#portafolio">Portafolio</a>
-            <a href="#contacto">Contacto</a>
+        
+         <!-- Navigation -->
+        <div class="barra">
+            <p class="logo">SZ.</p>
+            <div class="mobile-menu">
+                <img src="img/barras.svg" alt="logo menu responsive">
+            </div>
+            <nav class="navegacion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobreMi">Sobre Mi</a>
+                    <a href="#portafolio">Mi Portafolio</a>
+                    <a href="#contacto">Contacto</a>
             </nav>
-        </div>
+        </div> <!--Barra de Navegacion-->
 
-        <h1 class="titulo animacion">SZ.</h1>
-    
+        <h1 class="titulo animacion">Santiago Zambrana</h1>     
     </header>
      
-    
-       <!-- ImagenFondo -->
-       <section class="fondo">
+    <!-- ImagenFondo -->
+     <section class="fondo">
         <div class="imagen">
           <h2>Bienvenidos a Mi Sitio Web<span></h2>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -40,11 +45,11 @@
         </svg>
           <p id="typewriter"></p>
         </div> 
-    </section>
+    </section> 
 
     <!-- Acerca de Mi -->
-    <main id="sobreMi" class="contenedor sombra">
-        <section >
+    <main id="sobreMi" >
+        <section class="contenedor"  >
             <h2 class="centrar-titulo">Sobre Mi</h2>
             <div class="perfil">
                 <img class="foto-perfil" src="img/foto perfil (2).jpeg" alt="foto">
@@ -53,32 +58,79 @@
                     Tengo Predisposición para aprender, responsabilidad y capacidad para trabajar en equipo. En búsqueda de desafíos y oportunidades que me permitan crecer tanto personal, 
                     como profesionalmente en el área de las TI, dispuesto a aprender nuevas tecnologías y aportar mi experiencia para lograr los objetivos.
                 </p> 
-                <ul class="quitar-viñeta">
-                 <p class="resaltar">Herramientas y Tecnologias principales que he utilizado son:</p>
-                 <li>📌MySQL</li>
-                 <li>📌HTML/CSS</li>
-                 <li>📌Javascript(básico)</li>
-                 <li>📌Java</li>
-                 <li>📌GitHub</li>
-                 <li>📌(Actualmente estoy aprendiendo desarrollo web completo 🔹)</li>
-
-                </ul> 
-                <ul class="quitar-viñeta">
-                    <p class="resaltar">Mis Aptitudes son:</p>
-                    <li>🔗Capacidad de análisis</li>
-                    <li>🔗Metodologías Ágiles</li>
-                    <li>🔗Trabajo en Equipo</li>
-                    <li>🔗Pro-Activo</li>
-                    <li>🔗Compañero</li>
-
-                    <P class="resaltar">Idiomas:</P>
-                    <li>📌Español</li>
-                    <li>📌Inglés(básico-Intermedio)</li>
-                </ul>                          
             </div>
         </section>
-         
-        <!-- Portafolio -->
+
+        <!-- *** SECCION EDUCACION Y APTITUDES *** -->
+       
+        <div class="curve-update" style="height: 110px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C193.28,168.27 238.42,47.88 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #F07B3F;"></path></svg></div>
+        <section class="bg-naranja">
+            <div class="perfil contenedor">
+                <div class="experiencias-cursos">
+                    <section class="experiencia-curso">
+                        <h3 class="titulo-secundario">Educación</h3>
+                        <p class="item1">2016-Presente</p>
+                        <p class="item2">Ingeniería en Sistemas de Información</p>
+                        <p class="item3">Universidad Tecnológica Nacional - FRM</p>
+                    </section>
+
+                    <section class="experiencia-curso">
+                        <p class="item1">2020-Diseño,Anális y Desarrollo</p>
+                        <p class="item2">Proyecto Universitario-Sistema Mesa de Ayuda</p>
+                        <p class="item3">Repositorio git : https://github.com/santiZambrana97/Sistema-Mesa-Ayuda </p>
+                    </section>
+
+                    <section class="experiencia-curso">
+                        <p class="item1">2021-Completo</p>
+                        <p class="item2">Curso de JavaScript </p>
+                        <p class="item3">Desde Cero Nivel Junior</p>
+                    </section>
+                       
+                    <section class="experiencia-curso">
+                        <p class="item1">2022-En curso</p>
+                        <p class="item2">Curso de Desarrolo Web Completo</p>
+                        <ul class="curso-descripcion">
+                            <li class="experience-activity">Desarrollo de páginas web con HTML y CSS</li>
+                            <li class="experience-activity">Crear sitios web dínamicos con PHP y MYSQL</li>
+                            <li class="experience-activity">Crear aplicaciones CRUD con PHP y MySQL</li>
+                            <li class="experience-activity">Escribir código JavaScript y jQuery</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="experiencias-cursos">
+                    <section class="experiencia-curso">
+                        <h3 class="titulo-secundario">Aptitudes</h3>
+                        <p class="item2">Mis Aptitudes son : </p>
+                        <ul class="curso-descripcion">
+                            <li class="aptitud">Trabajo en equipo</li>
+                            <li class="aptitud">Responsabilidad</li>
+                            <li class="aptitud">Inglés (Básico-Intermedio)</li>
+                            <li class="aptitud">Pro-Activo</li>
+                            <li class="aptitud">Compañero</li>
+                        </ul>
+                    </section>
+                    <div class="flex-skill">
+                        <h3 class="titulo-secundario">Herramientas y Tecnologías</h3>
+                        <ul class="skill-list">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">Sass</li>
+                            <li class="skill">GIT</li>
+                            <li class="skill">MySQL</li>
+                            <li class="skill">Java(POO)</li>
+                            <li class="skill">JavaScript(básico)</li>
+                            <li class="skill">PHP(básico)</li>
+                            <li class="skill">Google Drive</li>
+                            <li class="skill">Microsoft Office</li>
+                            <li class="skill">Trello</li>
+                        </ul>
+                    </div>
+                </div>                     
+            </div>
+        </section>
+        <div style="height: 110px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C171.27,195.89 263.26,-6.39 505.36,30.11 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #F07B3F;"></path></svg></div>
+       
+        <!--*** Portafolio *** -->
         <section id="portafolio">
             <h2 class="centrar-titulo">Mi Portafolio</h2>
             <div class="proyectos">
@@ -87,7 +139,6 @@
                         <div class="iconos">
                             <img src="img/guitarra-electrica.png" alt="">
                         </div>
-                        <p>Página Web que contiene información sobre Festival de Música de Rock y EDM(electronic dance music).</p>
                     <a class="boton alinear-boton" href="https://festival-rock-edm-music.netlify.app" target="_BLANCK">Conocer Más</a>   
                 </section>
                 
@@ -96,7 +147,6 @@
                         <div class="iconos">
                             <img src="img/magdalena.png" alt="">
                         </div>
-                        <p>Página Web desarrollada para Microemprendimiento de Pastelería.Encontrá Postres, Tortas y Más.</p>
                     <a class="boton alinear-boton" href="https://zambranapatisserie.netlify.app" target="_BLANCK">Conocer Más</a> 
                 </section>
                
@@ -104,8 +154,7 @@
                     <h3>Sitio Web Blog DeCafé </h3>
                         <div class="iconos">
                             <img src="img/taza-de-cafe (1).png" alt="">
-                        </div>
-                        <p>Página Web para los amantes del Café.Encontá información del café, los beneficios de este  , cursos , recetas y más.</p> 
+                        </div> 
                     <a class="boton alinear-boton"  href="https://blog-de-cafe-santizambrana.netlify.app" target="_BLANCK">Conocer Más</a>
                 </section>
 
@@ -113,8 +162,7 @@
                     <h3>Sitio Web TechNews</h3>
                         <div class="iconos">
                             <img src="img/noticias-del-mundo.png" alt="">
-                        </div>
-                        <p>Sitio Web enfocado en brindar y subir contenido de noticias informativas.</p> 
+                        </div> 
                     <a class="boton" href="https://teck-news.netlify.app" target="_BLANCK">Conocer Más</a>
                 </section>
 
@@ -123,7 +171,6 @@
                         <div class="iconos">
                             <img src="img/camiseta-de-futbol.png" alt="">
                         </div>
-                        <p>Sitio Web enfocado en brindar y mostrar playeras con la temática de Tecnologías de FrontEnd.</p> 
                     <a class="boton " href="https://primertiendaweb.netlify.app" target="_BLANCK">Conocer Más</a>
                 </section>
 
@@ -132,91 +179,68 @@
                         <div class="iconos">
                             <img src="img/idea.png" alt="">
                         </div>
-                        <p>Sitio Web llevado desarrollado solo con la biblioteca multiplataforma Bootstrap.</p> 
                     <a class="boton " href="https://smart-agency-santizambrana.netlify.app/" target="_BLANCK">Conocer Más</a>
                 </section>
             </div>
         </section>
 
-        <!-- Redes Sociales -->
-        <section id="contacto">
-            <h2 class="centrar-titulo">Mis Redes</h2>
-            <div class="alinear-iconos">
-                <a href="https://t.me/santizambrana" target="_BLANCK" >
-                    <img class="icono" src="img/telegrama.png"  alt="">
-                </a>
-               
+        <!-- *** Formulario *** -->
+        <h2 id="contacto" class="centrar-titulo">Formulario de Contacto</h2>
 
-                <a href = "https://wa.me/542634512398" target="_BLANCK">
-                    <img class="icono" src="img/whatsapp.png"  alt="">
-                </a>
-
-                
-                <a href="https://github.com/santiZambrana97" target="_BLANCK" >
-                    <img class="icono" src="img/github.png"  alt="">
-                </a>
-                
-           
-                <a href="https://www.linkedin.com/in/santiago-zambrana-a79176227/" target="_BLANCK" >
-                    <img class="icono" src="img/linkedin.png"  alt="">
-                 </a>
-              
-             
-                <a href="https://www.instagram.com/santi.97.zambrana/" target="_BLANCK" >
-                    <img class="icono" src="img/instagram (1).png"  alt="">
-                </a> 
-            </div>
-        </section>
-
-        <!-- Formulario -->
-        <h2 class="centrar-titulo">Formulario de Contacto</h2>
-        <form class = "miform" method="post" data-netlify="true">
+        <form class="contenedor formulario" method="POST" data-netlify="true">
             <fieldset>
-                <legend>Contactame llenando todos los campos</legend>
-                <div class="contenedor-campos">
-                    <label >Nombre</label>
-                    <input class = "inp" name="nombre" type="text" id="nombre" placeholder = "Nombre" required>
+                <legend>Información de Contacto</legend>
 
-                    <label>Correo</label>
-                    <input class = "inp" name= "correo" type="text" id="correo" placeholder = "Correo Electrónico" required>
+                    <label for="nombre" >Nombre</label>
+                    <input  name="nombre" type="text" id="nombre" placeholder = "Nombre" required>
 
-                    <label >Teléfono</label>
-                    <input class = "inp" name="telefono" type="text" id="telefono" placeholder = "Teléfono" required>
+                    <label for="correo">Email</label>
+                    <input  name= "correo" type="email" id="correo" placeholder = "Correo Electrónico" required>
 
-                    <label>Mensaje</label>
+                    <label for="telefono" >Teléfono</label>
+                    <input  name="telefono" type="number" id="telefono" placeholder = "Teléfono" required>
+
+                    <label for="mensaje">Mensaje</label>
                     <textarea class = "tex" name="mensaje" id="mensaje" placeholder = "Escriba aquí su mensaje" required></textarea>
 
                     <div class="botonubi">
-                        <input type="submit" value="ENVIAR" class = "botomform" id="boton">
+                        <input type="submit" value="ENVIAR" class =  "botomform" id="boton">
                     </div>
-                </div>
-            </fieldset>
-        </form> 
+            </fieldset>  
+        </form>
 
-        <a class="volver-atras" href="index.html">
-            <img src="img/flecha-hacia-arriba.png" alt="flecha hacia arriba">
-            <p>Volver al Inicio</p>
-        </a>
+        <!-- Redes Sociales -->
+        <section>
+            <h2 class="centrar-titulo">Mis Redes</h2>
+            <div class="social-networks">
+                <div class="alinear-iconos">
+                    <a href="https://wa.me/542634512398" target="_BLANCK" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/santizambrana" target="_BLANCK" class="telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/santiago-zambrana-a79176227/" target="_BLANCK" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/santiZambrana97" target="_BLANCK" class="github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/santi.97.zambrana/" target="_BLANCK" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>  
+        </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="centrar-footer">
-            <p class="centrar">Todos los derechos reservados ©.Santiago Zambrana-2021</p>
+            <p class="centrar">Todos los derechos reservados ©.Santiago Zambrana-2022</p>
             <div class="ubicacion-correo">
                 <img src="img/sobre-de-correo-electronico.png" alt="">
                 <p class="margin">santi.97.zambrana@gmail.com</p>
             </div>
-        </div>
-        
+        </div>    
     </footer>     
     
     <script src="js/app.js"></script>
     <script src="js/animacion.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="js/TypeWriter.js"></script>
-    
+     
 
 </body>
 </html>
