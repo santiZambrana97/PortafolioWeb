@@ -263,6 +263,7 @@ p{
  .experiencia-curso{
     display: flex;
     flex-direction: column;
+  
 } 
 
 .item1{
@@ -305,6 +306,42 @@ p{
     color: var(--oscuro); 
 }
 
+/*** Herramientas y Tecnologías ***/
+
+.flex-skill{
+    display: flex;
+    flex-direction: column;
+    
+}
+.skill-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-wrap: wrap; 
+    gap: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    padding: 0;
+    
+}
+
+.skill{
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* border: 2px solid var(--oscuro); */
+     box-shadow: 0 0.25rem 0.5rem 0.125rem var(--oscuro); 
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+    background-color: #FFD460;
+    
+}
+
+.skill:hover{
+    transform: scale(1,1);
+}
+
+
 
 /***Portafolio***/
 @media (min-width: 768px) {
@@ -341,49 +378,6 @@ p{
     align-items: center;
     
 }
-
-/*** Herramientas y Tecnologías ***/
-
-.flex-skill{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.titulo-tecno{
-    margin: 0;
-    color: var(--blanco);
-}
-
-.skill-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     flex-wrap: wrap; 
-    gap: 1rem;
-    list-style: none;
-    margin-bottom: 1rem;
-    padding: 0;
-    
-}
-
-.skill{
-    font-weight: bold;
-    font-size: 1.5rem;
-    /* border: 2px solid var(--oscuro); */
-     box-shadow: 0 0.25rem 0.5rem 0.125rem var(--oscuro); 
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.5s;
-    background-color: #FFD460;
-    transition: all 1s;
-    
-}
-
-.skill:hover{
-    transform: scale(1,1);
-}
-
 
 /*Barra Navegacion fija*/
 .fijo{
